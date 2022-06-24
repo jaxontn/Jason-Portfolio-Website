@@ -32,6 +32,7 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
+        {/*
           <div className="app__testimonial-item app__flex">
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
             <div className="app__testimonial-content">
@@ -41,7 +42,7 @@ const Testimonial = () => {
                 <h5 className="p-text">{testimonials[currentIndex].company}</h5>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="app__testimonial-btns app__flex">
             <div className="app__flex" onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
@@ -54,7 +55,7 @@ const Testimonial = () => {
           </div>
         </>
       )}
-
+       
       <div className="app__testimonial-brands app__flex">
         {brands.map((brand) => (
           <motion.div
